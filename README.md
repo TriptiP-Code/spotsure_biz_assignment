@@ -1,102 +1,5 @@
 # DevOps Engineering Assignment: Real-Time Chat App  SUBMISSION 
 
-### Q1
-
-When you run
-
-```
-node server.js
-```
-
-who actually starts the program?
-windows run the program 
-
----
-
-### Q2
-
-Is VS Code running your backend?
-
-Or is it just helping you?
-
-Explain.
-no vs code only sends the command run node.js , and then windows run the node.exe file
-so vs code is only a platform to write the command 
-
----
-
-### Q3
-
-What is a process?
-
-Give **3 examples** besides Node.
-Process are the task runninng on the OS , it is scheduled by cpu
-other examples are chrome , vs code , asus application
-
----
-
-### Q4
-
-Why does
-
-> "It works on my machine"
-
-happen?
-because may be the person who created the application is running it in a machine having compatible node version , dependncies or env which is suitable to run the application but may be another person has a diff env i.e another node version , another os then application will give error 
-
----
-
-### Q5
-
-If Windows manages CPU, RAM and processes,
-
-why do we even need Docker?
-may be docker will create an image which can run on any machine having docker , when they do docker run a container will get created using the image
-
-(Don't worry if you can't answer this completely yet. Just think about it.)
-
-===============================================================
-
-### Q1
-
-What is virtualization?
-in one big server or system , it can run multiple machines (vm) i.e in one server , there can be windows , linux , centos . each os has their own machine , their own ram , kernal and all machines are independent of each other and in those machine we can run node appplication. This genrally help us to use the resource efficently , i.e no need of having 3 servers for 3 diff team , get one big server and user hypervisor and vitualise it
-
----
-
-### Q2
-
-What is a Hypervisor?
-hypervisor is installed in a machine and makes  vm ,on top of server 
-
----
-
-### Q3
-
-Why does every Virtual Machine need its own Operating System?
-because they r seperate machine , although on top of a server but acting as an indepenednt machine , so whatever os is best for our application we can install it
-
----
-
-### Q4
-
-If we create 100 Virtual Machines,
-
-what gets duplicated 100 times?
-i dont know
-
----
-
-### Q5 ⭐ (Most Important)
-
-Why did engineers start looking for an alternative to Virtual Machines?
-because of space issue , in virtualisation the ram , cpu are equally distributed on the system , so even if the application need more space , we cannnot give it
-
----
-
-============================================
-PROJECT
-
 I cloned the project
  git clone https://github.com/yaswanthsai257/devops.git
 
@@ -313,10 +216,10 @@ when the workflow reaches :
 name: Deploy to EC2
 uses: appleboy/ssh-action@v1.2.0
 
-GitHub needs a secure way to log in to your EC2 instance ,since there is no person to type a password, we use SSH key authentication.
+GitHub needs a secure way to log in to your EC2 instance ,since there is no person to type a password, I use SSH key authentication.
 1st  Generate a new SSH key pair on EC2
 
-On the EC2 server, we ran:
+On the EC2 server, I ran:
 
 ssh-keygen -t ed25519 -C "github-actions"
 
