@@ -97,8 +97,7 @@ Now comes docker compose , the backend container was being built correctly, and 
 however, I noticed that the frontend volume mapping was commented out.
 
 originally
-
- # - ./frontend:/usr/share/nginx/html:ro
+commented  ./frontend:/usr/share/nginx/html:ro
 this means that NGINX had no frontend file to serve 
 
 I uncommented the volume mapping 
@@ -154,7 +153,8 @@ http://localhost
 
 hurrayy its working now , I can see the 
 
-![[Pasted image 20260728205619.png]]
+<img width="1591" height="1000" alt="image" src="https://github.com/user-attachments/assets/99928af9-61de-4f9e-9ad8-b4dd0df19e88" />
+
 
 
 This confirmed that Nginix successfully proxied the request ,  WebSocket upgrade headers were working ,  FastAPI accepted the connection
@@ -164,7 +164,7 @@ I then opened multiple browser tabs and exchanged messages between them.
 Messages were instantly broadcast to all connected clients, confirming that the real-time chat functionality was working correctly.
 
 Below is the Example
-![[Pasted image 20260728205930.png]]
+<img width="1896" height="1017" alt="image" src="https://github.com/user-attachments/assets/722cc8fa-64e3-495b-ae8e-5042ba987b17" />
 
 
 
@@ -199,7 +199,8 @@ docker compose up -d --build
 
 and now when I did 
 
-![[Pasted image 20260728210720.png]]
+<img width="1915" height="1010" alt="image" src="https://github.com/user-attachments/assets/2607709e-07ac-45d0-935c-ea5dcdf29493" />
+
 
 Although had some networking issue , updated the security group  added an inbound rule ,Type: HTTP ,Port: 80 , Source: 0.0.0.0/0
 then only http://13.200.243.83/ worked
