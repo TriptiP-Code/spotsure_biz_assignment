@@ -3,7 +3,7 @@
 I cloned the project
  git clone https://github.com/yaswanthsai257/devops.git
 
-the inspected the files 
+then inspected the files 
 
 and then did
 docker compose up -d --build
