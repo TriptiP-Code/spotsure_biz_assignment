@@ -1,5 +1,12 @@
 # DevOps Engineering Assignment: Real-Time Chat App  SUBMISSION 
 
+Architecture Diagram 
+
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/ce715b4e-ae4b-4904-bdc5-90a3ad70bc58" />
+
+
+# ASSIGNMENT EXPLANATION HOW I DID
+
 I cloned the project
  git clone https://github.com/yaswanthsai257/devops.git
 
